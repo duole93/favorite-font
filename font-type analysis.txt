@@ -1,0 +1,26 @@
+Typography analize
+default size: 16px
+
+[nav]
+[v] Nav-link 16px rem bold 
+
+
+[Searchbar]
+[v] Searchbar 14px bold 
+Searchbar btn-dropdown menu 14px regular
+
+[filter]
+Filter-btn 14px regular
+[v] Filter-checkbox-label 14px bold
+
+[view]
+[v] view-result 12px regular
+[v] view-title 14px bold
+[v] btn-view 14px regular
+[v] btn-view-sort 14px bold
+
+[font-card grid]
+[v] font-card font-title 14px bold 
+[v]font-card font-style-number 12px bold
+[v] font-card font-Author 14px bold
+[v] font-card font-test 40px regular
