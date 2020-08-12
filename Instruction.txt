@@ -1,23 +1,34 @@
 
-Structure
-[DONE] 1 Header with minor navigation (Logo and Catalog/Featured/Articles/About link list)
-[DONE] 2 Nav with Major navigation / page-manipulation 
-    (search, custom text, font-size, dark/light mode, grid/list mode, and reset)
-[DONE] 3 Main section to contain the font cards
-[DONE] 4 Font cards which display the Font Name, the font creator, the sample text, and an add button
-[DONE] 5 Footer section with your developer information
+>> Structure
+    [DONE] 1 Header with minor navigation (Logo and Catalog/Featured/Articles/About link list)
+    [DONE] 2 Nav with Major navigation / page-manipulation 
+        (search, custom text, font-size, dark/light mode, grid/list mode, and reset)
+    [DONE] 3 Main section to contain the font cards
+    [DONE] 4 Font cards which display the Font Name, the font creator, the sample text, and an add button
+    [DONE] 5 Footer section with your developer information
 
-Style
-[DONE] 1 Sample text in each card should be displayed in the corresponding font
-[DONE] 2 Buttons/links should be evident (make sure the cursor changes, etc.)
-[DONE] 3 Implement a way to handle overflow from sample text in font cards, as the font size is adjustable
+>> Style
+    [DONE] 1 Sample text in each card should be displayed in the corresponding font
+    [DONE] 2 Buttons/links should be evident (make sure the cursor changes, etc.)
+    [DONE] 3 Implement a way to handle overflow from sample text in font cards, as the font size is adjustable
 
-Functionality
-[DONE] 1 Text typed into the custom text (type something) box should immediately change the sample text displayed in each font card
-[DONE] 2 The sample text should return to the default sample if the input box (type something) no longer has any input (ex. input == "")
-[DONE] 3 Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
-[DONE] 4 Implement the clickable 'reset' icon on the far right of the major navigation; it should make the page appear as if the user reloaded the page (do not actually reload the page)
+>> Functionality
+    [DONE] 1 Text typed into the custom text (type something) box should immediately change the sample text displayed in each font card
+    [DONE] 2 The sample text should return to the default sample if the input box (type something) no longer has any input (ex. input == "")
+    [DONE] 3 Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
+    [DONE] 4 Implement the clickable 'reset' icon on the far right of the major navigation; it should make the page appear as if the user reloaded the page (do not actually reload the page)
+    ----------- tier 2 front-end with API------------
+    1 On load, the page should display fonts sorted by current popularity, as returned by the Google Fonts Developer API (see below)
+    2 The search feature should be fully functional and should display matching fonts (it's up to you if you want to do this via a 'submit' or through onchange)
+    3 When the search input is cleared (via reset button or manually), the fonts should automaticaly display sorted by poplarity again
 
-Other
-1 Your repo needs to have a robust README.md
-2 Make sure that there are no errors in the developer console before submitting
+>> Other
+    1 Your repo needs to have a robust README.md
+    2 Make sure that there are no errors in the developer console before submitting
+
+>> Extras (Not Required)
+    1. Make your design fully responsive (small/large/portrait/landscape, etc.)
+    2. Implement the light/dark mode toggle buttons
+    3. Implement the change display icon so you can flip between a grid layout and a list layout for the font cards
+ ----------- tier 2 front-end with API------------
+    4. Make the 'add-font' icon add the font to a list (localHost, Cache API, etc) for front-end persistence; users can then delete the font from the list
