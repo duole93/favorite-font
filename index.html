@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="home">
             <div class="nav">
                 <div>
                     <h2 class="nav-brand">
@@ -37,21 +37,27 @@
                 <div class="search-ctn-sub search-ctn-sub-grow-1">
                     <i class="fas fa-search search-icon"></i>
                     <div class="search-input-ctn">
-                        <input class="search-input" type="text" name="search-text" id="search-text" />
+                        <input class="search-input" type="text" name="search-text" id="search-text" placeholder="Search"/>
                     </div>
                     <button class="search-btn search-btn-circle"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="search-ctn-sub search-ctn-sub-grow-2">
                     <div class="search-btn-ctn">
-                        <button class="search-btn">Custom <i class="fas fa-caret-down"></i></button>
+                        <button class="search-btn dropdown-btn">Custom <i class="fas fa-caret-down"></i></button>
                     </div>
                     <div class="search-input-ctn">
-                        <input class="search-input" type="text" name="test-text" id="test-text" />
+                        <input class="search-input" type="text" name="test-text" id="test-text" placeholder="Type something" />
                     </div>
                 </div>
 
-                <div class="search-ctn-sub search-ctn-sub-no-flex">
-                    <button class="search-btn">100 px <i class="fas fa-caret-down"></i></button>
+                <div class="search-ctn-sub dropdown search-ctn-sub-no-flex">
+                    <button class="search-btn dropdown-btn resize-btn" onclick=resize()> 24px <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-menu resize-menu">
+                        <button class="search-btn dropdown-item">10</button>
+                        <button class="search-btn dropdown-item">16</button>
+                        <button class="search-btn dropdown-item">24</button>
+                        <button class="search-btn dropdown-item">40</button>
+                    </div>
                 </div>
                 <div class="search-ctn-sub search-ctn-sub-no-flex">
                     <label class="switch">
@@ -60,7 +66,7 @@
                     </label>
                 </div>
                 <div class="search-ctn-sub search-ctn-sub-no-flex">
-                    <button class=" search-btn search-btn-circle"><i class="fas fa-redo"></i></button>
+                    <button class=" search-btn search-btn-circle" onclick="reset()"><i class="fas fa-redo"></i></button>
                 </div>
 
             </div><!--  container ctn-search -->
@@ -146,13 +152,11 @@
                     <h3 class="font-author">Multiple Designers</h3>
                     <span class="font-style-number">10 styles</span>
                     <p class="font-test lemonada">Almost before we knew it, we had left the ground.</p>
-                </a>
-                >
+                </a>                
                 </div>
             </div>
             
-            <button class="overlay-btn"><i class="fas fa-angle-up fa-2x"></i></button>
-            
+            <a href="#home" class="overlay-btn"><i class="fas fa-angle-up fa-2x"></i></a>            
         </div>
         <footer>Clone by Duong Le 2020</footer>
         <script src="scripts/index.js"></script>

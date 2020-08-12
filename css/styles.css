@@ -35,6 +35,7 @@
 /* GLOBAL STYLE */
 a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 body {
   margin: 0;
@@ -49,7 +50,7 @@ button {
   background-color: #fff;
   cursor: pointer;
 }
-button:hover{
+button:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -92,7 +93,7 @@ button:hover{
 }
 
 .font-test {
-  font-size: 3rem;
+  font-size: 24px;
   line-height: 1em;
   overflow-wrap: anywhere;
   margin-top: 1rem;
@@ -124,6 +125,8 @@ button:hover{
         NAVIGATION
 ==========================*/
 header {
+  background-color: #fff;
+  z-index: 2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   margin-bottom: 1.3em;
 }
@@ -236,6 +239,9 @@ header {
 }
 
 .search-btn-circle {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 }
@@ -319,7 +325,8 @@ header {
 ==========================*/
 .container-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(35vh, auto);
   grid-gap: 10px;
   max-width: 960px;
 }
@@ -332,7 +339,7 @@ header {
   position: relative;
 }
 .font-card:hover {
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);  
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);
 }
 
 .font-title,
@@ -348,19 +355,23 @@ header {
 
 .overlay-btn {
   position: fixed;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5%;
+  bottom: 10%;
   right: 10%;
   width: 50px;
   height: 50px;
   padding: 1.5em;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);
   border-radius: 50%;
 }
-.overlay-btn:hover{
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14);  
+.overlay-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  
 }
 
 /* ======================= 
@@ -369,10 +380,11 @@ header {
 footer {
   width: 100%;
   text-align: center;
+  padding: 1em;
+  margin-top: 1em;
   font-weight: 400;
   font-size: 0.875rem;
-  padding: 2em;
-  margin-top: 1em;
+  background-color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
 
@@ -476,3 +488,32 @@ input[type="checkbox"]:checked + .checkbox-label:after {
   background: rgb(26, 115, 232);
   border-color: rgb(26, 115, 232);
 }
+
+/*DROPDOWN MENU*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  overflow:auto;
+  z-index: 2;
+  margin-top:0.25em;
+  padding: 0.25em 0;
+  display: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.14);;
+}
+.dropdown-menu-visible{
+  display: block;
+}
+.dropdown-item{
+  text-align: left;
+  margin:0;
+  width:100%;
+  border-radius: 0;
+}
+
